@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 50px 50px 300px auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #36422e;
+    color: #b8a28e;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Libre Bodoni', serif, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    grid-column: auto;
+    grid-row: 1/2;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+h2 {
+    grid-row: 2/3;
+}
+
+.form {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 40px);
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+}
+
+.label {
+    display: block;
+}
+
+#label_1 {
+    grid-row: 1/2;
+}
+
+#label_2 {
+    grid-row: 3/4;
+}
+
+#num1 {
+    grid-row: 2/3;
+}
+
+#num1 {
+    grid-row: 4/5;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 5;
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    background-color: #E7EFE4;
+    caret-color: #142718;
+    text-align: center;
+    color: #142718;
+    font-weight: bold;
+    font-family: 'Libre Bodoni', Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.btn-show-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #98CBB0;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100px;
+    text-transform: uppercase;
+    font-family: "Libre Bodoni";
+    color: black;
+    letter-spacing: 0.2rem;
+}
+
+.btn-show-result:hover {
+    color: rgb(1, 57, 7);
+    box-shadow: 0px 2px 8px 2px rgb(141, 150, 178, .3);
+}
+
+.btn-show-result:active {
+    color: #142718;
+    border: 2px solid #142718;
+}
+
+.container-show-result {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image {
+    display: block;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+}
+
+.card-image {
+    display: block;
+    width: 200px;
+    height: 150px;
+}
